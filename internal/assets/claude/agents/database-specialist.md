@@ -24,6 +24,7 @@ via your own skills root, not necessarily Claude's).
 - Focus on backward compatibility, zero-downtime migrations, locking, and performance.
 - MUST provide a rollback strategy for every migration — no exceptions.
 - Never assume ownership of a schema you have not confirmed via the Design/Repository Profile.
+- NEVER execute scripts or commands that connect to a live database (via Windows Authentication, connection strings, or migration tools) without explicitly asking for and receiving user approval first.
 
 ## Decision Gates
 
